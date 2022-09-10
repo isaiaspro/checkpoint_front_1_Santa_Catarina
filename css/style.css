@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwitcher+Grypen&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -12,9 +11,7 @@
     box-sizing: border-box;
 }
 
-h2, .destaques, .recomendados, .menu li{
-    font-family: 'Poppins';
-}
+
 
 
 
@@ -40,6 +37,11 @@ main {
     width: 100%;
     min-width: 425px;
     justify-content: center;
+}
+
+h2, .destaques, .recomendados, .menu li{
+    font-family: 'Poppins';
+    text-shadow: gray 0.1em 0.1em 0.1em;
 }
 
 /* HEADER */
@@ -127,7 +129,41 @@ a{
     height: 500px;
     border-radius: 25px;
     background-color: gray;
+    background-repeat: no-repeat;
+    background-position: -200px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+
+.card h2{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.card p{
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.45);
+    text-align: start;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding:15px;
+    border-radius: 0px 0px 25px 25px;  
+}
+
+#oktoberfest{
+    background-image: url(../img/grupoalemao_site.jpg);
+}
+
+#bolshoi{
+    background-image: url(../img/Bailarina_Amanda_Gomes.jpg);
 }
 
 
@@ -210,6 +246,7 @@ div {
         font-size: 5rem;
         color: #fff;
         visibility: visible;
+        text-shadow: black 0.1em 0.1em 0.5em;
     }
 
 
