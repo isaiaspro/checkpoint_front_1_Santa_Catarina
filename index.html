@@ -8,12 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem Vindo à Santa Catarina</title>
     <script src="https://kit.fontawesome.com/db82221095.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
 
-    <header>
+    <header><a name="home"></a>
 
 
         <div class="top">
@@ -21,12 +25,12 @@
             <div id="logo"></div>
             <p>Estado de Santa Catarina</p>
 
-            <nav>
+            <nav><a name="home"></a>
 
                 <ul class="menu">
-                    <li> Home</li>
-                    <li> Curiosidades</li>
-                    <li><a href="#videos">Vídeos</a></li>
+                    <li class="hvr-float-shadow"><a href="#home">Home</a></li>
+                    <li class="hvr-float-shadow"><a href="#curiosidades_link">Curiosidades</a></li>
+                    <li class="hvr-float-shadow"><a href="#videos">Vídeos</a></li>
                 </ul>
             </nav>
 
@@ -37,76 +41,119 @@
 
     <main>
 
-<div id="banner">
+        <button class="home">
+            
+                <span  class="material-symbols-outlined hvr-float-shadow">
+                    <a href="#home">arrow_upward </a></span>
+        </button>
 
-<p class="bemvindo">Bem-Vindo à Santa Catarina</p>
-</div>
+        <div id="banner">
 
+            <p class="bemvindo">Bem-Vindo à Santa Catarina</p>
+        </div>
 
-        <h2 class="curiosidades">Curiosidades</h2>
+        <h2 class="curiosidades">Curiosidades <a name="curiosidades_link"></a></h2>
 
         <div class="cards">
-            <div class="card" id="oktoberfest">
+            <div class="card"  id="oktoberfest" title="Pessoas se divertindo na Oktoberfest">
                 <h2>Oktoberfest</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tempore dicta temporibus magnam laborum. Incidunt, voluptates omnis, aliquid excepturi, mollitia qui soluta placeat odio esse ipsam iure voluptas earum cupiditate!</p>
+                <p >
+                    <a href="https://oktoberfestblumenau.com.br/" target="_blank">Embora possa ser inesperado encontrar uma das maiores Oktoberfests do mundo no Brasil, a antiga
+                    colônia alemã de Blumenau no estado de Santa Catarina rivaliza com Munique tanto no quesito
+                    autenticidade como animação de suas comemorações.</a>
+                </p>
             </div>
-            <div class="card" id="bolshoi" title="Bailarina brasileira Amanda Gomes, formada na Escola do Teatro Bolshoi no Brasil em Joinville, no Norte de Santa Catarina">
+
+            <div class="card" id="bolshoi"
+                title="Bailarina brasileira Amanda Gomes, formada na Escola do Teatro Bolshoi no Brasil em Joinville, no Norte de Santa Catarina">
                 <h2>O Ballet Bolshoi</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tempore dicta temporibus magnam laborum. Incidunt, voluptates omnis, aliquid excepturi, mollitia qui soluta placeat odio esse ipsam iure voluptas earum cupiditate!</p>
+                <p>
+                    <a href="https://www.escolabolshoi.com.br/" target="_blank">A Escola do Teatro Bolshoi no Brasil é uma tradicional escola de balé existente na cidade de
+                    Joinville, no estado de Santa Catarina. Fundada em 2000, é a única filial do Teatro Bolshoi de
+                    Moscou e possui alunos de vários estados brasileiros e de outros países.</a>
+                </p>
             </div>
-            <div class="card">
-                <h2>Oktoberfest</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tempore dicta temporibus magnam laborum. Incidunt, voluptates omnis, aliquid excepturi, mollitia qui soluta placeat odio esse ipsam iure voluptas earum cupiditate!</p>
+
+            <div class="card" id="bigwheel"
+                title="FG BiG Wheel, a maior roda gigante estaiada da América Latina, em Balneário Camboriú, no estado de Santa Catarina">
+                <h2>FG BiG Wheel</h2>
+                <p>
+                    <a href="https://fgbigwheel.com.br/" target="_blank">A maior roda gigante estaiada da América Latina fica em Balneário Camboriú, SC. O novo cartão postal
+                    do Brasil tem uma vista ÚNICA da cidade, cheia de arranha-céus, unindo o Oceano, Cidade e a Mata
+                    Atlântica!</a>
+                </p>
             </div>
         </div>
 
         <h2>Vídeos <a name="videos"></a> </h2>
 
 
-        
 
-        <div class="videos">  
-            
-            
-            
-        <div class="destaques">
+
+        <div class="videos">
+
+
+
+            <div class="destaques">
 
                 <h2>Destaques</h2>
 
-                <iframe class="video" id="destaque1" src="https://www.youtube.com/embed/IwwuoePqWs0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video" id="destaque1" src="https://www.youtube.com/embed/IwwuoePqWs0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
 
-                    <iframe class="video" id="destaque1" src="https://www.youtube.com/embed/sOMqNvMKCtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video" id="destaque1" src="https://www.youtube.com/embed/sOMqNvMKCtk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
 
-        </div>
+            </div>
 
-        <div class="recomendados">
+            <div class="recomendados">
 
-            
+
 
                 <h2>Recomendados</h2>
 
-                <iframe class="video" src="https://www.youtube.com/embed/f3Ucve8DJ6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video" src="https://www.youtube.com/embed/f3Ucve8DJ6k" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
 
-                <iframe class="video" src="https://www.youtube.com/embed/f_73sawzBOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video" src="https://www.youtube.com/embed/f_73sawzBOc" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
 
-                <iframe class="video" src="https://www.youtube.com/embed/PFRqQKr1yro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  
+                <iframe class="video" src="https://www.youtube.com/embed/REN9elrmKH8" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
 
-</div>
 
+            </div>
 
+            
+            
+           
+                
+            
 
     </main>
+
+    
+
 
     <footer class="footer">
 
         <ul class="redes">
-            <li>
-                <a href="https://www.linkedin.com/in/isaiasmoresco/" target="_blank"><i
+            <li  class="hvr-float-shadow">
+                <a href="https://www.linkedin.com/in/isaiasmoresco/" target="_blank"><i id="linkedin"
                         class="fa-brands fa-linkedin"></i><br>Linkedin</a>
 
             </li>
-            <li>
+            <li class="hvr-float-shadow">
                 <a href="https://github.com/isaiaspro" target="_blank"><i class="fa-brands fa-github"></i><br>Github</a>
             </li>
         </ul>

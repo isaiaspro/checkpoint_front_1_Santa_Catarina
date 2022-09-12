@@ -12,10 +12,6 @@
 }
 
 
-
-
-
-
 html {
     scroll-behavior: smooth
 }
@@ -39,10 +35,18 @@ main {
     justify-content: center;
 }
 
-h2, .destaques, .recomendados, .menu li{
-    font-family: 'Poppins';
-    text-shadow: gray 0.1em 0.1em 0.1em;
+a{
+    text-decoration: none;
+    color: #000;
 }
+
+h2,
+.destaques,
+.recomendados,
+.menu li {
+    font-family: 'Poppins';
+}
+
 
 /* HEADER */
 .top {
@@ -92,14 +96,30 @@ h2, .destaques, .recomendados, .menu li{
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 200px;
+    width: 150px;
     height: 40px;
+    border-radius: 25px;
     background-color: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-a{
+.menu li a{
+    width: 150px;
+}
+
+
+.menu li:hover{
+    font-weight: 600;
+}
+
+.menu li a:hover{
+    color: #ef3332;
+
+}
+
+a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* HEADER */
@@ -111,7 +131,7 @@ a{
     margin-top: 30px;
 }
 
-.bemvindo{
+.bemvindo {
     visibility: hidden;
 }
 
@@ -124,9 +144,11 @@ a{
     justify-content: center;
 }
 
+
 .card {
     width: 300px;
     height: 500px;
+    font-size: 13px;
     border-radius: 25px;
     background-color: gray;
     background-repeat: no-repeat;
@@ -141,29 +163,43 @@ a{
     color: #fff;
 }
 
-.card h2{
+.card h2 {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #000;
     text-shadow: black 0.1em 0.1em 0.2em
 }
 
-.card p{
+.card p {
     width: 300px;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.75);
     text-align: start;
     text-shadow: black 0.1em 0.1em 0.2em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    padding:15px;
-    border-radius: 0px 0px 25px 25px;  
+    padding: 15px;
+    border-radius: 0px 0px 25px 25px;
 }
 
-#oktoberfest{
-    background-image: url(../img/grupoalemao_site.jpg);
+.card a{
+    color: #fff;
+    text-decoration: none;
 }
 
-#bolshoi{
+
+
+#oktoberfest {
+    background-image: url(../img/Pessoas-na-oktoberfest.jpg);
+
+}
+
+
+#bolshoi {
     background-image: url(../img/Bailarina_Amanda_Gomes.jpg);
+}
+
+#bigwheel {
+    background-image: url(../img/FGBigWheel.jpg);
+    background-position: -820px;
 }
 
 
@@ -188,6 +224,10 @@ div {
     margin-bottom: 30px;
 }
 
+.home{
+    visibility: hidden;
+}
+
 
 
 /* MAIN */
@@ -195,7 +235,7 @@ div {
 
 
 
-                                                                        /* SITE DESKTOP */
+/* SITE DESKTOP */
 
 
 
@@ -235,11 +275,11 @@ div {
         background-image: url(../img/peakpx.jpg);
         background-size: cover;
         max-width: 100%;
-        
+
 
     }
 
-    .bemvindo{
+    .bemvindo {
         font-family: 'Qwitcher Grypen';
         font-style: normal;
         font-weight: 400;
@@ -277,6 +317,10 @@ div {
         align-content: center;
     }
 
+.videos h2 {
+        justify-content: first baseline;
+    }
+
     .destaques {
         /* display: flex; */
         gap: 36px;
@@ -288,9 +332,7 @@ div {
 
     }
 
-    .videos h2 {
-        justify-content: first baseline;
-    }
+    
 
     #destaque1 {
         width: 550px;
@@ -310,6 +352,27 @@ div {
         justify-content: center;
 
     }
+
+    .home{
+        visibility: visible;
+        width: 50px;
+        height: 50px;
+        background-color: #ef3332;
+        border-radius: 100%;
+        position: fixed;
+        bottom: 15%;
+        right: 5%;
+        border: none;
+        
+
+    }
+
+span a {
+    color: #fff;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
 
 
 
@@ -351,7 +414,7 @@ div {
 
 }
 
-/* SITE DESKTOP */
+/* FIM SITE DESKTOP */
 
 
 footer {
@@ -373,7 +436,7 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
+    font-family: 'Poppins', sans-serif;
     align-items: center;
     gap: 40px;
     list-style-type: none;
